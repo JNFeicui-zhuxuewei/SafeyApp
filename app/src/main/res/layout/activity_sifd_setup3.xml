@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sjfdSetup3Activity">
+
+
+   <TextView
+          style="@style/TextBarStyle"
+         android:text="手机防盗页面3"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定安全号码功能: \n 您可以使用安全号码绑定以使用的手机"
+        android:textSize="20sp" />
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/mobileTel"
+     android:hint="请输入号码"
+     />
+ <Button
+     android:layout_alignTop="@+id/mobileTel"
+     android:onClick="show"
+     android:text="从通讯录中获取"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:onClick="prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:text="上一步" />
+    <Button
+        android:onClick="next"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:text="下一步" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

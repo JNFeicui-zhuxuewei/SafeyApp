@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.safeyapp.ui.sjfdSetup2Activity">
+
+
+    <TextView
+        style="@style/TextBarStyle"
+        android:text="手机防盗页面2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锁定SIM卡功能： \n 当您更换SIM卡时，将触发报警功能"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_bind_sim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="锁定SIM卡/解锁SIM卡" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="当前SIM卡是否锁定："
+        android:textSize="26sp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_lock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/icon_phonemgr" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:onClick="prev"
+            android:text="上一步" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:onClick="next"
+            android:text="下一步" />
+
+
+    </RelativeLayout>
+</LinearLayout>

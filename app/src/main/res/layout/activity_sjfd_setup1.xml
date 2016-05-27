@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.sjfdSetup1Activity">
+   <TextView
+       style="@style/TextBarStyle"
+       android:text="手机防盗设置界面1"
+
+       />
+   <TextView
+       android:textSize="20sp"
+       android:text="手机防盗具有如下功能"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:drawableRight="@android:drawable/star_on"
+       android:gravity="center"
+       android:text="锁定SIM卡"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:drawableRight="@android:drawable/star_on"
+       android:gravity="center"
+       android:text="绑定安全号码"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:drawableRight="@android:drawable/star_on"
+       android:gravity="center"
+       android:text="全球定位系统 DPS"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:drawableRight="@android:drawable/star_on"
+       android:gravity="center"
+       android:text="播放报警声音"/>
+   <ImageView
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:layout_gravity="center"
+       android:src="@mipmap/ic_launcher"
+
+       />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <Button
+          android:onClick="next"
+          android:text="下一步"
+          android:layout_margin="4dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          />
+
+
+
+
+
+   </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
